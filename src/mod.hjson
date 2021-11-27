@@ -1,0 +1,8 @@
+name: "moving-on-up"
+displayName: "MovingOnUP"
+author: "TakesTheBiscuit"
+description: "M People vibes, moving on up"
+version: "1.0"
+minGameVersion: "125"
+dependencies: [ ]
+hidden: false
