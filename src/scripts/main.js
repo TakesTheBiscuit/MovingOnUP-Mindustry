@@ -1,13 +1,11 @@
-//listen for the event where a unit is destroyed
-Events.on(WorldLoadEvent, event => {
-  //display toast on top of screen when the unit was a player
-  
-Vars.ui.hudfrag.showToast("Pathetic.");
+const lib = require("moulib");
 
-const myDialog = new BaseDialog("Dialog Title");
-myDialog.addCloseButton();
-myDialog.cont.add("Goodbye.");
-myDialog.show();
+Events.on(WaveEvent, event => {
+    
+    Vars.ui.hudfrag.showToast("^^^ MOVING ON UP ^^^");
 
+    const player = Vars.player;
+    const mouSound = lib.loadSound("mou");
+    mouSound.at(player.getX(), player.getY(), 1);
 
 })
